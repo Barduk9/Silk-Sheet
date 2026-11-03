@@ -41,7 +41,13 @@
 
   <body>
     <div class="cursor">
-      <img src="assets/images/cursor1.webp" class="cursor__image" alt="" />
+      <img
+        src="assets/images/cursor1.webp"
+        class="cursor__image"
+        alt=""
+        width="1024"
+        height="1536"
+      />
     </div>
     <div id="smooth-wrapper">
       <div id="smooth-content">
@@ -51,6 +57,8 @@
               <img
                 src="assets/images/logo.webp"
                 alt="Silk Sheet — The Great History of Tea"
+                width="2000"
+                height="512"
               />
             </a>
             <button
@@ -66,43 +74,22 @@
             </button>
             <ul class="header__menu">
               <li>
-                <a class="header__link" href="#" aria-label="Origins of tea"
-                  >Origins</a
-                >
+                <a class="header__link" href="#origins">Origins</a>
               </li>
               <li>
-                <a
-                  class="header__link"
-                  href="#"
-                  aria-label="Key dates in the history of tea"
-                  >The Tea Canon</a
-                >
+                <a class="header__link" href="#the-tea-canon">The Tea Canon</a>
               </li>
               <li>
-                <a
-                  class="header__link"
-                  href="#"
-                  aria-label="Tea's journey to the West"
-                  >The Way to the West</a
-                >
+                <a class="header__link" href="#the-way-to-the-west">The Way to the West</a>
               </li>
               <li>
-                <a
-                  class="header__link"
-                  href="#"
-                  aria-label="The history of tea in England"
-                  >Tea in England</a
-                >
+                <a class="header__link" href="#tea-in-england">Tea in England</a>
               </li>
               <li>
-                <a class="header__link" href="#" aria-label="Our home"
-                  >Our home</a
-                >
+                <a class="header__link" href="#our-home">Our home</a>
               </li>
               <li>
-                <a class="header__link" href="#" aria-label="Come for tea"
-                  >Come for tea</a
-                >
+                <a class="header__link" href="#come-for-tea">Come for tea</a>
               </li>
             </ul>
           </nav>
@@ -120,29 +107,39 @@
                 class="hero__branch-left"
                 src="assets/images/tea-branch.webp"
                 alt=""
+                width="847"
+                height="981"
               />
               <img
                 class="hero__hands"
                 src="assets/images/tea-hands.webp"
                 alt="Hands holding a cup of tea"
+                width="1024"
+                height="1024"
               />
               <img
                 class="hero__branch-right"
                 src="assets/images/tea-branch.webp"
                 alt=""
+                width="847"
+                height="981"
               />
             </div>
           </hero>
-          <section class="first-chapter">
+          <section id="origins" class="first-chapter">
             <img
               class="first-chapter__china-person"
               src="assets/images/china-man.webp"
               alt="Illustration of Shen Nong, the legendary Chinese tea grower"
+              width="1680"
+              height="944"
             />
             <img
               class="first-chapter__image"
               src="assets/images/transition.webp"
               alt=""
+              width="1680"
+              height="944"
             />
             <div class="first-chapter__title-container">
               <div class="first-chapter__title">
@@ -160,7 +157,7 @@
               </p>
             </div>
           </section>
-          <section class="second-chapter">
+          <section id="the-tea-canon" class="second-chapter">
             <div class="second-chapter__cards-viewport">
               <div class="second-chapter__title-container">
                 <div class="second-chapter__title">
@@ -250,27 +247,34 @@
               </div>
             </div>
           </section>
-          <section class="third-chapter">
+          <section id="the-way-to-the-west" class="third-chapter">
             <img
               class="third-chapter__sea-wave-one"
               src="assets/images/sea-wave-1.webp"
               alt=""
+              width="1680"
+              height="944"
             />
             <img
               class="third-chapter__sea"
               src="assets/images/sea.webp"
               alt=""
+              width="1680"
+              height="659"
             />
             <img
               class="third-chapter__sea-wave-two"
               src="assets/images/sea.webp"
               alt=""
+              width="1680"
+              height="659"
             />
-
             <img
               class="third-chapter__ship"
               src="assets/images/ship.webp"
               alt="Tea clipper sailing ship at sea"
+              width="1024"
+              height="1024"
             />
             <div class="third-chapter__title-container">
               <div class="third-chapter__title">
@@ -288,21 +292,27 @@
               </p>
             </div>
           </section>
-          <section class="fourth-chapter">
+          <section id="tea-in-england" class="fourth-chapter">
             <img
               class="fourth-chapter__tea"
               src="assets/images/tea.webp"
               alt="A cup of tea"
+              width="1217"
+              height="920"
             />
             <img
               class="fourth-chapter__sweet"
               src="assets/images/sweet.webp"
               alt="Sweets served with afternoon tea"
+              width="733"
+              height="922"
             />
             <img
               class="fourth-chapter__image"
               src="assets/images/transition-oliv.webp"
               alt=""
+              width="1680"
+              height="944"
             />
             <div class="fourth-chapter__title-container">
               <div class="fourth-chapter__title">
@@ -319,19 +329,28 @@
               </p>
             </div>
           </section>
-          <section class="five-chapter"></section>
+          <section id="our-home" class="five-chapter"></section>
         </main>
         <footer></footer>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollSmoother.min.js"></script>
-    <script src="js/header.js"></script>
-    <script src="js/first-chapter.js"></script>
-    <script src="js/second-chapter.js"></script>
-    <script src="js/third-chapter.js"></script>
-    <script src="js/fourth-chapter.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollSmoother.min.js"
+      defer
+    ></script>
+    <script src="js/header.js" defer></script>
+    <script src="js/first-chapter.js" defer></script>
+    <script src="js/second-chapter.js" defer></script>
+    <script src="js/third-chapter.js" defer></script>
+    <script src="js/fourth-chapter.js" defer></script>
 
     <script type="application/ld+json">
       {

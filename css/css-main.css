@@ -9,13 +9,14 @@
 
 @font-face {
   font-family: "Gormorant";
-  src: url("/assets/fonts/CormorantGaramond-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("../assets/fonts/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Shadows";
   src: url("../assets/fonts/ShadowsIntoLight-Regular.ttf") format("truetype");
+  font-display: swap;
 }
 
 body {
