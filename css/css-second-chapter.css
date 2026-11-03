@@ -1,0 +1,129 @@
+.second-chapter {
+  position: relative;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  align-items: center;
+}
+
+.second-chapter__cards-viewport {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.second-chapter__title-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  gap: var(--space-8);
+  padding: 0 var(--space-6);
+}
+
+.second-chapter__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-chapter__title p {
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-8);
+  margin: 0;
+}
+
+.second-chapter__title h2 {
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-24);
+  line-height: var(--line-height-14);
+  margin: 0;
+  min-width: 15vw;
+}
+
+.second-chapter__title b {
+  color: var(--color-primary);
+}
+
+.second-chapter__cards-container {
+  display: flex;
+  flex-direction: row;
+  scroll-snap-align: start;
+  flex-wrap: nowrap;
+  gap: var(--space-6);
+  padding-right: var(--space-6);
+  flex: 0 0 auto;
+  width: max-content;
+  will-change: transform;
+}
+
+.second-chapter__card:nth-child(1),
+.second-chapter__card:nth-child(3),
+.second-chapter__card:nth-child(5) {
+  rotate: -5deg;
+  margin-bottom: 60px;
+}
+
+.second-chapter__card:nth-child(2),
+.second-chapter__card:nth-child(4) {
+  rotate: 3deg;
+  margin-top: 60px;
+}
+
+.second-chapter__card {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 clamp(260px, 30vw, 380px);
+  max-width: none;
+  box-sizing: border-box;
+  box-shadow: 0 18px 40px -18px color-mix(in oklab, black 45%, transparent);
+  padding: var(--space-6);
+  transition: scale 0.3s;
+}
+
+.second-chapter__card:hover {
+  scale: 1.05;
+}
+
+.second-chapter__card-date-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.second-chapter__card-date {
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-25);
+  margin: 0;
+}
+
+.second-chapter__card-subdate {
+  color: var(--color-brown);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-10);
+  margin: 0;
+}
+
+.second-chapter__card-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-chapter__card-text {
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-12);
+  margin: 0;
+}
+
+.second-chapter__card-subtext {
+  color: var(--color-brown);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-10);
+  margin: 0;
+}

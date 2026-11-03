@@ -1,0 +1,7 @@
+.five-chapter {
+  position: relative;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}

@@ -1,0 +1,38 @@
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none;
+  }
+}
+
+a,
+button,
+input,
+textarea {
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+.cursor__image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+@media (hover: none) {
+  .cursor {
+    display: none;
+  }
+}

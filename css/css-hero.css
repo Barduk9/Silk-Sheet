@@ -1,0 +1,135 @@
+.hero {
+  position: relative;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.hero__image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.hero__paper {
+  clip-path: polygon(
+    0 4%,
+    6% 0,
+    14% 5%,
+    25% 1%,
+    38% 4%,
+    52% 0,
+    64% 3%,
+    78% 0,
+    90% 5%,
+    100% 2%,
+    98% 30%,
+    100% 60%,
+    97% 100%,
+    85% 96%,
+    70% 100%,
+    55% 95%,
+    40% 100%,
+    25% 96%,
+    10% 100%,
+    0 95%,
+    2% 60%,
+    0 30%
+  );
+  background-color: var(--color-paper);
+  color: var(--color-text);
+  padding: var(--space-4);
+  box-sizing: border-box;
+  position: absolute;
+  top: 65%;
+  rotate: -10deg;
+  left: 5%;
+  max-width: 35ch;
+  word-break: break-word;
+  transition:
+    color 0.3s,
+    scale 0.3s;
+}
+
+.hero__paper:hover {
+  color: var(--bg-color);
+  background-color: var(--black-color);
+  scale: 1.1;
+}
+
+.hero__paper-text {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-12);
+}
+
+.hero__title {
+  position: absolute;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-25);
+  color: var(--color-text);
+  text-transform: uppercase;
+  margin: 0;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 47vw;
+  text-align: right;
+  z-index: var(--z-content);
+}
+
+.hero__title b {
+  color: var(--color-primary);
+}
+
+.hero__branch-left {
+  width: var(--image-21);
+  rotate: 40deg;
+  z-index: var(--z-content);
+  position: absolute;
+  top: 30vh;
+  right: 75vw;
+  transform: translate(-50%, -50%);
+}
+
+.hero__branch-right {
+  width: var(--image-21);
+  rotate: -70deg;
+  z-index: var(--z-content);
+  position: absolute;
+  top: 10vh;
+  left: 110vw;
+  transform: translate(-50%, -50%);
+}
+
+.hero__hands {
+  width: var(--image-25);
+  z-index: var(--z-base);
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 700px) {
+  .hero__title {
+    top: 25%;
+    max-width: 10ch;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero__title {
+    top: 30%;
+    max-width: 25ch;
+    text-align: center;
+  }
+
+  .hero__paper {
+    scale: 0;
+  }
+}
