@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en-GB">
   <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="require-trusted-types-for 'script'"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO -->
@@ -44,7 +48,10 @@
         <header>
           <nav class="header__nav">
             <a class="header__logo" href="#">
-              <img src="assets/images/logo.webp" />
+              <img
+                src="assets/images/logo.webp"
+                alt="Silk Sheet — The Great History of Tea"
+              />
             </a>
             <button
               class="header__burger"
@@ -58,12 +65,45 @@
               <span></span>
             </button>
             <ul class="header__menu">
-              <li><a class="header__link" href="#">Origins</a></li>
-              <li><a class="header__link" href="#">The Tea Canon</a></li>
-              <li><a class="header__link" href="#">The Way to the West</a></li>
-              <li><a class="header__link" href="#">Tea in England</a></li>
-              <li><a class="header__link" href="#">Our home</a></li>
-              <li><a class="header__link" href="#">Come for tea</a></li>
+              <li>
+                <a class="header__link" href="#" aria-label="Origins of tea"
+                  >Origins</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header__link"
+                  href="#"
+                  aria-label="Key dates in the history of tea"
+                  >The Tea Canon</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header__link"
+                  href="#"
+                  aria-label="Tea's journey to the West"
+                  >The Way to the West</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header__link"
+                  href="#"
+                  aria-label="The history of tea in England"
+                  >Tea in England</a
+                >
+              </li>
+              <li>
+                <a class="header__link" href="#" aria-label="Our home"
+                  >Our home</a
+                >
+              </li>
+              <li>
+                <a class="header__link" href="#" aria-label="Come for tea"
+                  >Come for tea</a
+                >
+              </li>
             </ul>
           </nav>
         </header>
@@ -79,11 +119,17 @@
               <img
                 class="hero__branch-left"
                 src="assets/images/tea-branch.webp"
+                alt=""
               />
-              <img class="hero__hands" src="assets/images/tea-hands.webp" />
+              <img
+                class="hero__hands"
+                src="assets/images/tea-hands.webp"
+                alt="Hands holding a cup of tea"
+              />
               <img
                 class="hero__branch-right"
                 src="assets/images/tea-branch.webp"
+                alt=""
               />
             </div>
           </hero>
@@ -91,10 +137,12 @@
             <img
               class="first-chapter__china-person"
               src="assets/images/china-man.webp"
+              alt="Illustration of Shen Nong, the legendary Chinese tea grower"
             />
             <img
               class="first-chapter__image"
               src="assets/images/transition.webp"
+              alt=""
             />
             <div class="first-chapter__title-container">
               <div class="first-chapter__title">
@@ -206,14 +254,24 @@
             <img
               class="third-chapter__sea-wave-one"
               src="assets/images/sea-wave-1.webp"
+              alt=""
             />
-            <img class="third-chapter__sea" src="assets/images/sea.webp" />
+            <img
+              class="third-chapter__sea"
+              src="assets/images/sea.webp"
+              alt=""
+            />
             <img
               class="third-chapter__sea-wave-two"
               src="assets/images/sea.webp"
+              alt=""
             />
 
-            <img class="third-chapter__ship" src="assets/images/ship.webp" />
+            <img
+              class="third-chapter__ship"
+              src="assets/images/ship.webp"
+              alt="Tea clipper sailing ship at sea"
+            />
             <div class="third-chapter__title-container">
               <div class="third-chapter__title">
                 <p>Chapter Third</p>
@@ -231,11 +289,20 @@
             </div>
           </section>
           <section class="fourth-chapter">
-            <img class="fourth-chapter__tea" src="assets/images/tea.webp" />
-            <img class="fourth-chapter__sweet" src="assets/images/sweet.webp" />
+            <img
+              class="fourth-chapter__tea"
+              src="assets/images/tea.webp"
+              alt="A cup of tea"
+            />
+            <img
+              class="fourth-chapter__sweet"
+              src="assets/images/sweet.webp"
+              alt="Sweets served with afternoon tea"
+            />
             <img
               class="fourth-chapter__image"
               src="assets/images/transition-oliv.webp"
+              alt=""
             />
             <div class="fourth-chapter__title-container">
               <div class="fourth-chapter__title">
