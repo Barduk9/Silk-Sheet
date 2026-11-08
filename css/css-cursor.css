@@ -11,7 +11,7 @@ textarea {
   cursor: none;
 }
 
-.cursor {
+.pointer-cursor {
   position: fixed;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@ textarea {
   height: 0;
 }
 
-.cursor__image {
+.pointer-cursor__image {
   position: fixed;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@ textarea {
 }
 
 @media (hover: none) {
-  .cursor {
+  .pointer-cursor {
     display: none;
   }
 }

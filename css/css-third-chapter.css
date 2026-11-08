@@ -1,4 +1,4 @@
-.third-chapter {
+.tea-trade {
   position: relative;
   width: 100%;
   display: flex;
@@ -8,7 +8,7 @@
   align-items: flex-start;
 }
 
-.third-chapter__ship {
+.tea-trade__ship {
   position: absolute;
   width: var(--image-25);
   top: 4%;
@@ -16,7 +16,7 @@
   z-index: 6;
 }
 
-.third-chapter__sea {
+.tea-trade__sea {
   position: absolute;
   top: 65%;
   rotate: 180deg;
@@ -25,7 +25,7 @@
   transform: translate(-50%, -50%);
 }
 
-.third-chapter__sea-wave-one {
+.tea-trade__wave--front {
   position: absolute;
   top: 43%;
   left: 50%;
@@ -33,7 +33,7 @@
   transform: translate(-50%, -50%);
 }
 
-.third-chapter__sea-wave-two {
+.tea-trade__wave--back {
   position: absolute;
   top: 61%;
   left: 50%;
@@ -41,7 +41,7 @@
   transform: translate(-50%, -50%);
 }
 
-.third-chapter__title-container {
+.tea-trade__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,20 +51,20 @@
   align-items: flex-end;
 }
 
-.third-chapter__title {
+.tea-trade__heading {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.third-chapter__title p {
+.tea-trade__heading p {
   color: var(--color-primary);
   font-family: var(--font-sans);
   font-size: var(--font-size-8);
   margin: 0;
 }
 
-.third-chapter__title h2 {
+.tea-trade__heading h2 {
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: var(--font-size-24);
@@ -73,11 +73,11 @@
   text-align: end;
 }
 
-.third-chapter__title b {
+.tea-trade__heading b {
   color: var(--color-primary);
 }
 
-.third-chapter__subtitle {
+.tea-trade__description {
   color: var(--color-brown);
   font-family: var(--font-serif);
   font-size: var(--font-size-14);

@@ -6,16 +6,17 @@
 @import url(css-fourth-chapter.css);
 @import url(css-five-chapter.css);
 @import url(css-cursor.css);
+@import url(css-footer.css);
 
 @font-face {
   font-family: "Gormorant";
-  src: url("../assets/fonts/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
+  src: url("../assets/fonts/CormorantGaramond-VariableFont_wght.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Shadows";
-  src: url("../assets/fonts/ShadowsIntoLight-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/ShadowsIntoLight-Regular.woff2") format("woff2");
   font-display: swap;
 }
 

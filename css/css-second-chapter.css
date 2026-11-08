@@ -1,4 +1,4 @@
-.second-chapter {
+.tea-timeline {
   position: relative;
   width: 100%;
   display: flex;
@@ -8,13 +8,13 @@
   align-items: center;
 }
 
-.second-chapter__cards-viewport {
+.tea-timeline__viewport {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.second-chapter__title-container {
+.tea-timeline__content {
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -23,19 +23,19 @@
   padding: 0 var(--space-6);
 }
 
-.second-chapter__title {
+.tea-timeline__heading {
   display: flex;
   flex-direction: column;
 }
 
-.second-chapter__title p {
+.tea-timeline__heading p {
   color: var(--color-primary);
   font-family: var(--font-sans);
   font-size: var(--font-size-8);
   margin: 0;
 }
 
-.second-chapter__title h2 {
+.tea-timeline__heading h2 {
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: var(--font-size-24);
@@ -44,11 +44,11 @@
   min-width: 15vw;
 }
 
-.second-chapter__title b {
+.tea-timeline__heading b {
   color: var(--color-primary);
 }
 
-.second-chapter__cards-container {
+.tea-timeline__list {
   display: flex;
   flex-direction: row;
   scroll-snap-align: start;
@@ -60,20 +60,20 @@
   will-change: transform;
 }
 
-.second-chapter__card:nth-child(1),
-.second-chapter__card:nth-child(3),
-.second-chapter__card:nth-child(5) {
+.tea-timeline__item:nth-child(1),
+.tea-timeline__item:nth-child(3),
+.tea-timeline__item:nth-child(5) {
   rotate: -5deg;
   margin-bottom: 60px;
 }
 
-.second-chapter__card:nth-child(2),
-.second-chapter__card:nth-child(4) {
+.tea-timeline__item:nth-child(2),
+.tea-timeline__item:nth-child(4) {
   rotate: 3deg;
   margin-top: 60px;
 }
 
-.second-chapter__card {
+.tea-timeline__item {
   display: flex;
   flex-direction: column;
   flex: 0 0 clamp(260px, 30vw, 380px);
@@ -84,44 +84,44 @@
   transition: scale 0.3s;
 }
 
-.second-chapter__card:hover {
+.tea-timeline__item:hover {
   scale: 1.05;
 }
 
-.second-chapter__card-date-container {
+.tea-timeline__date {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: var(--space-2);
 }
 
-.second-chapter__card-date {
+.tea-timeline__year {
   color: var(--color-primary);
   font-family: var(--font-sans);
   font-size: var(--font-size-25);
   margin: 0;
 }
 
-.second-chapter__card-subdate {
+.tea-timeline__era {
   color: var(--color-brown);
   font-family: var(--font-serif);
   font-size: var(--font-size-10);
   margin: 0;
 }
 
-.second-chapter__card-text-container {
+.tea-timeline__event {
   display: flex;
   flex-direction: column;
 }
 
-.second-chapter__card-text {
+.tea-timeline__event-title {
   color: var(--color-text);
   font-family: var(--font-sans);
   font-size: var(--font-size-12);
   margin: 0;
 }
 
-.second-chapter__card-subtext {
+.tea-timeline__event-description {
   color: var(--color-brown);
   font-family: var(--font-serif);
   font-size: var(--font-size-10);

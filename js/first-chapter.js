@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(
-  ".first-chapter__china-person",
+  ".tea-origins__emperor",
   {
     scale: 0,
   },
@@ -9,7 +9,7 @@ gsap.fromTo(
     scale: 1,
     ease: "expo",
     scrollTrigger: {
-      trigger: ".first-chapter",
+      trigger: ".tea-origins",
       start: "top 15%",
       scrub: 0.8
     },

@@ -1,4 +1,4 @@
-.fourth-chapter {
+.afternoon-tea {
   position: relative;
   width: 100%;
   display: flex;
@@ -6,7 +6,7 @@
   background-color: var(--bg-color);
 }
 
-.fourth-chapter__tea {
+.afternoon-tea__cup {
   position: absolute;
   width: var(--image-22);
   top: 10%;
@@ -16,7 +16,7 @@
   transform: translate(-50%, -50%);
 }
 
-.fourth-chapter__sweet {
+.afternoon-tea__dessert {
   position: absolute;
   width: var(--image-18);
   top: 75%;
@@ -26,7 +26,7 @@
   transform: translate(-50%, -50%);
 }
 
-.fourth-chapter__title-container {
+.afternoon-tea__content {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -36,19 +36,19 @@
   transform: translate(-50%, -50%);
 }
 
-.fourth-chapter__title {
+.afternoon-tea__heading {
   display: flex;
   flex-direction: column;
 }
 
-.fourth-chapter__title p {
+.afternoon-tea__heading p {
   color: var(--color-primary);
   font-family: var(--font-sans);
   font-size: var(--font-size-8);
   margin: 0;
 }
 
-.fourth-chapter__title h2 {
+.afternoon-tea__heading h2 {
   color: var(--color-paper);
   font-family: var(--font-sans);
   font-size: var(--font-size-24);
@@ -56,11 +56,11 @@
   margin: 0;
 }
 
-.fourth-chapter__title b {
+.afternoon-tea__heading b {
   color: var(--color-primary);
 }
 
-.fourth-chapter__subtitle {
+.afternoon-tea__description {
   color: var(--color-paper);
   font-family: var(--font-serif);
   font-size: var(--font-size-14);

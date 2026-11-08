@@ -1,11 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const section = document.querySelector(".second-chapter");
+const section = document.querySelector(".tea-timeline");
 const viewport = document.querySelector(
-  ".second-chapter__cards-viewport"
+  ".tea-timeline__viewport"
 );
 const track = document.querySelector(
-  ".second-chapter__title-container"
+  ".tea-timeline__content"
 );
 
 if (section && viewport && track) {

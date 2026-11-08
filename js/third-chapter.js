@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(
-  ".third-chapter__ship",
+  ".tea-trade__ship",
   {
     x: "-55%",
   },
@@ -9,23 +9,24 @@ gsap.fromTo(
     x: "145%",
     ease: "expo",
     scrollTrigger: {
-      trigger: ".third-chapter",
-      start: "top 15%",
+      trigger: ".tea-trade",
+      start: "top 20%",
+      end: "bottom",
       scrub: 0.8
     },
   },
 );
 
 gsap.set([
-  ".third-chapter__sea-wave-one",
-  ".third-chapter__sea-wave-two",
-  ".third-chapter__sea"
+  ".tea-trade__wave--front",
+  ".tea-trade__wave--back",
+  ".tea-trade__sea"
 ], {
   scale: 1.05,
   transformOrigin: "center center"
 });
 
-gsap.to(".third-chapter__sea-wave-one", {
+gsap.to(".tea-trade__wave--front", {
   rotation: 1,
   duration: 3,
   yoyo: true,
@@ -33,7 +34,7 @@ gsap.to(".third-chapter__sea-wave-one", {
   ease: "sine.inOut"
 });
 
-gsap.to(".third-chapter__sea-wave-two", {
+gsap.to(".tea-trade__wave--back", {
   rotation: 1,
   duration: 3,
   yoyo: true,
@@ -41,7 +42,7 @@ gsap.to(".third-chapter__sea-wave-two", {
   ease: "sine.inOut"
 });
 
-gsap.to(".third-chapter__sea", {
+gsap.to(".tea-trade__sea", {
   rotation: 181,
   duration: 3,
   yoyo: true,
@@ -49,7 +50,7 @@ gsap.to(".third-chapter__sea", {
   ease: "sine.inOut"
 });
 
-gsap.to(".third-chapter__ship", {
+gsap.to(".tea-trade__ship", {
   rotation: -1,
   duration: 3,
   yoyo: true,

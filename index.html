@@ -10,7 +10,7 @@
     <!-- SEO -->
     <meta
       name="description"
-      content="Discover the art of Chinese tea, traditional Gongfu tea ceremonies and the rich history of British afternoon tea. Explore the world of tea with Silk Leaf."
+      content="Discover the art of Chinese tea, traditional Gongfu tea ceremonies and the rich history of British afternoon tea. Explore the world of tea with Silk Sheet."
     />
     <meta name="author" content="Silk Sheet" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -36,119 +36,148 @@
     <meta name="theme-color" content="#f4f0e7" />
     <link rel="icon" href="assets/images/favicon.webp" />
     <title>Silk Sheet | Chinese Tea & British Tea Culture</title>
+    <link
+      rel="preload"
+      href="assets/fonts/ShadowsIntoLight-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/images/tea-hands.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
     <link rel="stylesheet" href="css/css-main.css" />
   </head>
 
   <body>
-    <div class="cursor">
+    <div class="pointer-cursor">
       <img
         src="assets/images/cursor1.webp"
-        class="cursor__image"
+        class="pointer-cursor__image"
         alt=""
         width="1024"
         height="1536"
+        decoding="async"
       />
     </div>
+    <header class="site-header">
+      <nav class="site-header__navigation">
+        <a class="site-header__logo" href="#hero">
+          <img
+            src="assets/images/logo.webp"
+            alt="Silk Sheet — The Great History of Tea"
+            width="2000"
+            height="512"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="site-header__menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="header-menu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <ul class="site-header__menu" id="header-menu">
+          <li>
+            <a class="site-header__link" href="#origins">Origins</a>
+          </li>
+          <li>
+            <a class="site-header__link" href="#the-tea-canon">The Tea Canon</a>
+          </li>
+          <li>
+            <a class="site-header__link" href="#the-way-to-the-west"
+              >The Way to the West</a
+            >
+          </li>
+          <li>
+            <a class="site-header__link" href="#tea-in-england"
+              >Tea in England</a
+            >
+          </li>
+          <li>
+            <a class="site-header__link" href="#our-home">Our home</a>
+          </li>
+          <li>
+            <a class="site-header__link" href="#come-for-tea">Come for tea</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div id="smooth-wrapper">
       <div id="smooth-content">
-        <header>
-          <nav class="header__nav">
-            <a class="header__logo" href="#">
-              <img
-                src="assets/images/logo.webp"
-                alt="Silk Sheet — The Great History of Tea"
-                width="2000"
-                height="512"
-              />
-            </a>
-            <button
-              class="header__burger"
-              type="button"
-              aria-label="Open menu"
-              aria-expanded="false"
-              aria-controls="header-menu"
-            >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <ul class="header__menu">
-              <li>
-                <a class="header__link" href="#origins">Origins</a>
-              </li>
-              <li>
-                <a class="header__link" href="#the-tea-canon">The Tea Canon</a>
-              </li>
-              <li>
-                <a class="header__link" href="#the-way-to-the-west">The Way to the West</a>
-              </li>
-              <li>
-                <a class="header__link" href="#tea-in-england">Tea in England</a>
-              </li>
-              <li>
-                <a class="header__link" href="#our-home">Our home</a>
-              </li>
-              <li>
-                <a class="header__link" href="#come-for-tea">Come for tea</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
         <main>
-          <hero class="hero">
-            <div class="hero__paper">
-              <p class="hero__paper-text">
+          <section id="hero" class="hero-section" aria-labelledby="page-title">
+            <div class="hero-section__note">
+              <p class="hero-section__note-text">
                 Five thousand years, one leaf and some hot water
               </p>
             </div>
-            <h1 class="hero__title">The Great History <b>of Tea</b></h1>
-            <div class="hero__image-container">
+            <h1 id="page-title" class="hero-section__title">
+              The Great History <b>of Tea</b>
+            </h1>
+            <div class="hero-section__illustrations">
               <img
-                class="hero__branch-left"
+                class="hero-section__tea-branch--left"
                 src="assets/images/tea-branch.webp"
                 alt=""
                 width="847"
                 height="981"
+                decoding="async"
               />
               <img
-                class="hero__hands"
+                class="hero-section__tea-cup"
                 src="assets/images/tea-hands.webp"
                 alt="Hands holding a cup of tea"
                 width="1024"
                 height="1024"
+                fetchpriority="high"
               />
               <img
-                class="hero__branch-right"
+                class="hero-section__tea-branch--right"
                 src="assets/images/tea-branch.webp"
                 alt=""
                 width="847"
                 height="981"
+                decoding="async"
               />
             </div>
-          </hero>
-          <section id="origins" class="first-chapter">
+          </section>
+          <section id="origins" class="tea-origins">
             <img
-              class="first-chapter__china-person"
+              class="tea-origins__emperor"
               src="assets/images/china-man.webp"
               alt="Illustration of Shen Nong, the legendary Chinese tea grower"
               width="1680"
               height="944"
+              loading="lazy"
+              decoding="async"
             />
             <img
-              class="first-chapter__image"
+              class="tea-origins__background"
               src="assets/images/transition.webp"
               alt=""
               width="1680"
               height="944"
+              loading="lazy"
+              decoding="async"
             />
-            <div class="first-chapter__title-container">
-              <div class="first-chapter__title">
+            <div class="tea-origins__content">
+              <div class="tea-origins__heading">
                 <p>Chapter One</p>
                 <h2>
                   The first tea grower <b>in the world</b> was the emperor.
                 </h2>
               </div>
-              <p class="first-chapter__subtitle">
+              <p class="tea-origins__description">
                 Shen Nong, the "Divine Farmer," tried hundreds of herbs to
                 discover which ones were healing. One day, wild camellia leaves
                 fell into a cauldron of boiling water, and the water turned
@@ -157,84 +186,84 @@
               </p>
             </div>
           </section>
-          <section id="the-tea-canon" class="second-chapter">
-            <div class="second-chapter__cards-viewport">
-              <div class="second-chapter__title-container">
-                <div class="second-chapter__title">
+          <section id="the-tea-canon" class="tea-timeline">
+            <div class="tea-timeline__viewport">
+              <div class="tea-timeline__content">
+                <div class="tea-timeline__heading">
                   <p>Chapter Two</p>
                   <h2>Five dates <b>that</b> stirred up the world.</h2>
                 </div>
 
-                <div class="second-chapter__cards-container">
-                  <article class="second-chapter__card">
-                    <div class="second-chapter__card-date-container">
-                      <h3 class="second-chapter__card-date">2737</h3>
-                      <p class="second-chapter__card-subdate">BC</p>
+                <div class="tea-timeline__list">
+                  <article class="tea-timeline__item">
+                    <div class="tea-timeline__date">
+                      <p class="tea-timeline__year">2737</p>
+                      <p class="tea-timeline__era">BC</p>
                     </div>
-                    <div class="second-chapter__card-text-container">
-                      <p class="second-chapter__card-text">
+                    <div class="tea-timeline__event">
+                      <h3 class="tea-timeline__event-title">
                         A leaf that fell into the cauldron
-                      </p>
-                      <p class="second-chapter__card-subtext">
+                      </h3>
+                      <p class="tea-timeline__event-description">
                         According to legend, Emperor Shen Nong was boiling water
                         under a camellia bush. The wind blew off a few leaves,
                         and thus the world's first tea was born.
                       </p>
                     </div>
                   </article>
-                  <article class="second-chapter__card">
-                    <div class="second-chapter__card-date-container">
-                      <h3 class="second-chapter__card-date">760</h3>
-                      <p class="second-chapter__card-subdate">AD</p>
+                  <article class="tea-timeline__item">
+                    <div class="tea-timeline__date">
+                      <p class="tea-timeline__year">760</p>
+                      <p class="tea-timeline__era">AD</p>
                     </div>
-                    <div class="second-chapter__card-text-container">
-                      <p class="second-chapter__card-text">
+                    <div class="tea-timeline__event">
+                      <h3 class="tea-timeline__event-title">
                         Lu Yu's "Tea Canon"
-                      </p>
-                      <p class="second-chapter__card-subtext">
+                      </h3>
+                      <p class="tea-timeline__event-description">
                         An orphan poet wrote the first book about tea: how to
                         pick, dry, and brew it. It is still read by masters of
                         ceremonies.
                       </p>
                     </div>
                   </article>
-                  <article class="second-chapter__card">
-                    <div class="second-chapter__card-date-container">
-                      <h3 class="second-chapter__card-date">1610</h3>
+                  <article class="tea-timeline__item">
+                    <div class="tea-timeline__date">
+                      <p class="tea-timeline__year">1610</p>
                     </div>
-                    <div class="second-chapter__card-text-container">
-                      <p class="second-chapter__card-text">Dutch cargo</p>
-                      <p class="second-chapter__card-subtext">
+                    <div class="tea-timeline__event">
+                      <h3 class="tea-timeline__event-title">Dutch cargo</h3>
+                      <p class="tea-timeline__event-description">
                         East India Company ships brought tea to Amsterdam. The
                         drink was more valuable than silver and was kept under
                         lock and key.
                       </p>
                     </div>
                   </article>
-                  <article class="second-chapter__card">
-                    <div class="second-chapter__card-date-container">
-                      <h3 class="second-chapter__card-date">1662</h3>
+                  <article class="tea-timeline__item">
+                    <div class="tea-timeline__date">
+                      <p class="tea-timeline__year">1662</p>
                     </div>
-                    <div class="second-chapter__card-text-container">
-                      <p class="second-chapter__card-text">
+                    <div class="tea-timeline__event">
+                      <h3 class="tea-timeline__event-title">
                         Tea at the English court
-                      </p>
-                      <p class="second-chapter__card-subtext">
+                      </h3>
+                      <p class="tea-timeline__event-description">
                         Portuguese Princess Catherine of Braganza marries the
                         English King Charles II. Her love of tea helps make the
                         drink fashionable among the English nobility.
                       </p>
                     </div>
                   </article>
-                  <article class="second-chapter__card">
-                    <div class="second-chapter__card-date-container">
-                      <h3 class="second-chapter__card-date">1866</h3>
+                  <article class="tea-timeline__item">
+                    <div class="tea-timeline__date">
+                      <p class="tea-timeline__year">1866</p>
                     </div>
-                    <div class="second-chapter__card-text-container">
-                      <p class="second-chapter__card-text">
+                    <div class="tea-timeline__event">
+                      <h3 class="tea-timeline__event-title">
                         The Great Tea Race
-                      </p>
-                      <p class="second-chapter__card-subtext">
+                      </h3>
+                      <p class="tea-timeline__event-description">
                         The clippers Ariel and Taeping compete to deliver the
                         new harvest from China to London. After 99 days at sea,
                         Taeping arrives at the pier approximately 20 minutes
@@ -247,41 +276,49 @@
               </div>
             </div>
           </section>
-          <section id="the-way-to-the-west" class="third-chapter">
+          <section id="the-way-to-the-west" class="tea-trade">
             <img
-              class="third-chapter__sea-wave-one"
+              class="tea-trade__wave--front"
               src="assets/images/sea-wave-1.webp"
               alt=""
               width="1680"
               height="944"
+              loading="lazy"
+              decoding="async"
             />
             <img
-              class="third-chapter__sea"
+              class="tea-trade__sea"
               src="assets/images/sea.webp"
               alt=""
               width="1680"
               height="659"
+              loading="lazy"
+              decoding="async"
             />
             <img
-              class="third-chapter__sea-wave-two"
+              class="tea-trade__wave--back"
               src="assets/images/sea.webp"
               alt=""
               width="1680"
               height="659"
+              loading="lazy"
+              decoding="async"
             />
             <img
-              class="third-chapter__ship"
+              class="tea-trade__ship"
               src="assets/images/ship.webp"
               alt="Tea clipper sailing ship at sea"
               width="1024"
               height="1024"
+              loading="lazy"
+              decoding="async"
             />
-            <div class="third-chapter__title-container">
-              <div class="third-chapter__title">
+            <div class="tea-trade__content">
+              <div class="tea-trade__heading">
                 <p>Chapter Third</p>
                 <h2>99 Days <b>Against</b> the Wind.</h2>
               </div>
-              <p class="third-chapter__subtitle">
+              <p class="tea-trade__description">
                 Tea clippers were the fastest sailing ships of their century. In
                 1866, the ships Ariel and Taeping had one of the most famous
                 races in the history of the tea trade. Their journey from Fuzhou
@@ -292,34 +329,40 @@
               </p>
             </div>
           </section>
-          <section id="tea-in-england" class="fourth-chapter">
+          <section id="tea-in-england" class="afternoon-tea">
             <img
-              class="fourth-chapter__tea"
+              class="afternoon-tea__cup"
               src="assets/images/tea.webp"
               alt="A cup of tea"
               width="1217"
               height="920"
+              loading="lazy"
+              decoding="async"
             />
             <img
-              class="fourth-chapter__sweet"
+              class="afternoon-tea__dessert"
               src="assets/images/sweet.webp"
               alt="Sweets served with afternoon tea"
               width="733"
               height="922"
+              loading="lazy"
+              decoding="async"
             />
             <img
-              class="fourth-chapter__image"
+              class="afternoon-tea__background"
               src="assets/images/transition-oliv.webp"
               alt=""
               width="1680"
               height="944"
+              loading="lazy"
+              decoding="async"
             />
-            <div class="fourth-chapter__title-container">
-              <div class="fourth-chapter__title">
+            <div class="afternoon-tea__content">
+              <div class="afternoon-tea__heading">
                 <p>Chapter Four</p>
                 <h2>England fell <b>in love</b> with tea.</h2>
               </div>
-              <p class="fourth-chapter__subtitle">
+              <p class="afternoon-tea__description">
                 In the 17th century, tea was a rare and expensive curiosity. At
                 first, it was for wealthy families, then for increasingly wider
                 layers of society. In the 19th century, afternoon tea — a
@@ -329,9 +372,397 @@
               </p>
             </div>
           </section>
-          <section id="our-home" class="five-chapter"></section>
+          <section id="our-home" class="tea-shop">
+            <div class="tea-shop__delivery-illustration">
+              <img
+                class="tea-shop__delivery-car"
+                src="assets/images/car.webp"
+                alt="A car with a tea delivery"
+                width="1680"
+                height="944"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="tea-shop__wheel--left"
+                src="assets/images/car-left.webp"
+                alt=""
+                width="202"
+                height="198"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="tea-shop__wheel--right"
+                src="assets/images/car-right.webp"
+                alt=""
+                width="202"
+                height="198"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="tea-shop__intro">
+              <div class="tea-shop__heading">
+                <p>Chapter Five: Today</p>
+                <h2>Our home is <b>a continuation</b> of history</h2>
+              </div>
+              <p class="tea-shop__description">
+                Since 1998, Silk Sheet has been sourcing tea directly from
+                family-owned plantations in Fujian, Yunnan, and Wuyi Mountains.
+                We taste every batch ourselves and sell only what we drink at
+                home.
+              </p>
+            </div>
+            <div class="tea-shop__products">
+              <article class="tea-shop__product">
+                <div class="tea-shop__product-inner">
+                  <div class="tea-shop__product-face tea-shop__product-front">
+                    <div class="tea-shop__product-heading">
+                      <h3 class="tea-shop__product-name">Da Hong Pao</h3>
+                      <p class="tea-shop__product-category">
+                        oolong · Wuyishan
+                      </p>
+                    </div>
+                    <div class="tea-shop__product-details">
+                      <p class="tea-shop__product-notes">
+                        Smoke, dark honey, baked plum
+                      </p>
+                      <p class="tea-shop__product-price">$80 / 50 g</p>
+                    </div>
+                    <p class="tea-shop__product-hint" aria-hidden="true">
+                      Turn card to read more
+                    </p>
+                  </div>
+                  <div
+                    class="tea-shop__product-face tea-shop__product-back"
+                    aria-hidden="true"
+                  >
+                    <h3 class="tea-shop__product-story-title">Da Hong Pao</h3>
+                    <p class="tea-shop__product-subtitle">
+                      <em>The Emperor's Tea</em>
+                    </p>
+                    <p class="tea-shop__product-description">
+                      Born among the rocky cliffs of Wuyishan, this
+                      distinguished oolong carries the spirit of ancient tea
+                      traditions. Its deep, roasted character unfolds into
+                      delicate notes of smoke, dark honey and baked plum. Rich,
+                      warming and unforgettable.
+                    </p>
+                    <p class="tea-shop__product-hint" aria-hidden="true">
+                      Turn card to return
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="tea-shop__product-toggle"
+                  type="button"
+                  aria-label="Show description for Da Hong Pao"
+                  aria-pressed="false"
+                ></button>
+              </article>
+              <article class="tea-shop__product">
+                <div class="tea-shop__product-inner">
+                  <div class="tea-shop__product-face tea-shop__product-front">
+                    <div class="tea-shop__product-heading">
+                      <h3 class="tea-shop__product-name">Bai Hao Yin Zhen</h3>
+                      <p class="tea-shop__product-category">white · Fujian</p>
+                    </div>
+                    <div class="tea-shop__product-details">
+                      <p class="tea-shop__product-notes">
+                        Silver buds, melon, meadow flowers
+                      </p>
+                      <p class="tea-shop__product-price">$90 / 50 g</p>
+                    </div>
+                    <p class="tea-shop__product-hint" aria-hidden="true">
+                      Turn card to read more
+                    </p>
+                  </div>
+                  <div
+                    class="tea-shop__product-face tea-shop__product-back"
+                    aria-hidden="true"
+                  >
+                    <h3 class="tea-shop__product-story-title">
+                      Bai Hao Yin Zhen
+                    </h3>
+                    <p class="tea-shop__product-subtitle">
+                      <em>Silver Needle</em>
+                    </p>
+                    <p class="tea-shop__product-description">
+                      One of the most delicate expressions of Chinese white tea.
+                      Made from tender silver buds, it offers a gentle, refined
+                      experience with notes of fresh melon, wild meadow flowers
+                      and a subtle natural sweetness. Quiet elegance in every
+                      cup.
+                    </p>
+                    <p class="tea-shop__product-hint" aria-hidden="true">
+                      Turn card to return
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="tea-shop__product-toggle"
+                  type="button"
+                  aria-label="Show description for Bai Hao Yin Zhen"
+                  aria-pressed="false"
+                ></button>
+              </article>
+              <article class="tea-shop__product">
+                <div class="tea-shop__product-inner">
+                  <div class="tea-shop__product-face tea-shop__product-front">
+                    <div class="tea-shop__product-heading">
+                      <h3 class="tea-shop__product-name">Shu Pu'er 2009</h3>
+                      <p class="tea-shop__product-category">Dark Yunnan</p>
+                    </div>
+                    <div class="tea-shop__product-details">
+                      <p class="tea-shop__product-notes">
+                        Wet forest, cocoa, dried cherry
+                      </p>
+                      <p class="tea-shop__product-price">$60 / 100 g</p>
+                    </div>
+                    <p class="tea-shop__product-hint" aria-hidden="true">
+                      Turn card to read more
+                    </p>
+                  </div>
+                  <div
+                    class="tea-shop__product-face tea-shop__product-back"
+                    aria-hidden="true"
+                  >
+                    <h3 class="tea-shop__product-story-title">
+                      Shu Pu'er 2009
+                    </h3>
+                    <p class="tea-shop__product-subtitle">
+                      <em>The Depth of Time</em>
+                    </p>
+                    <p class="tea-shop__product-description">
+                      A dark and mellow tea from Yunnan, shaped by time and
+                      careful fermentation. Its earthy character evokes a walk
+                      through a rain-soaked forest, followed by lingering notes
+                      of cocoa and dried cherry. Deep, smooth and contemplative.
+                    </p>
+                    <p class="tea-shop__product-hint" aria-hidden="true">
+                      Turn card to return
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="tea-shop__product-toggle"
+                  type="button"
+                  aria-label="Show description for Shu Pu'er 2009"
+                  aria-pressed="false"
+                ></button>
+              </article>
+              <article class="tea-shop__product">
+                <div class="tea-shop__product-inner">
+                  <div class="tea-shop__product-face tea-shop__product-front">
+                    <div class="tea-shop__product-heading">
+                      <h3 class="tea-shop__product-name">Koporye Ivan-tea</h3>
+                      <p class="tea-shop__product-category">
+                        Herbal · London Region
+                      </p>
+                    </div>
+                    <div class="tea-shop__product-details">
+                      <p class="tea-shop__product-notes">
+                        Fermented according to an 18th-century recipe
+                      </p>
+                      <p class="tea-shop__product-price">$85 / 50 g</p>
+                    </div>
+                    <p class="tea-shop__product-hint" aria-hidden="true">
+                      Turn card to read more
+                    </p>
+                  </div>
+                  <div
+                    class="tea-shop__product-face tea-shop__product-back"
+                    aria-hidden="true"
+                  >
+                    <h3 class="tea-shop__product-story-title">
+                      Koporye Ivan-tea
+                    </h3>
+                    <p class="tea-shop__product-subtitle">
+                      <em>A Taste of Old Traditions</em>
+                    </p>
+                    <p class="tea-shop__product-description">
+                      Inspired by an 18th-century fermentation recipe, this
+                      traditional herbal infusion brings forgotten tea-making
+                      customs back to life. Its character is rooted in heritage
+                      and simplicity, offering a distinctive experience beyond
+                      the world of traditional tea leaves.
+                    </p>
+                    <p class="tea-shop__product-hint" aria-hidden="true">
+                      Turn card to return
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="tea-shop__product-toggle"
+                  type="button"
+                  aria-label="Show description for Koporye Ivan-tea"
+                  aria-pressed="false"
+                ></button>
+              </article>
+            </div>
+            <div class="tea-shop__ceremonies">
+              <h2 class="tea-shop__ceremonies-title">Tea ceremonies</h2>
+              <div class="tea-shop__ceremony-list">
+                <article class="tea-shop__ceremony">
+                  <div class="tea-shop__ceremony-details">
+                    <h3 class="tea-shop__ceremony-name">Gongfu-cha</h3>
+                    <p class="tea-shop__ceremony-description">
+                      Five teas, Yixing clay, a master at your table
+                    </p>
+                    <p class="tea-shop__ceremony-duration">90 minutes</p>
+                  </div>
+                  <p class="tea-shop__ceremony-price">$50 per table</p>
+                </article>
+                <article class="tea-shop__ceremony">
+                  <div class="tea-shop__ceremony-details">
+                    <h3 class="tea-shop__ceremony-name">Samovar Evening</h3>
+                    <p class="tea-shop__ceremony-description">
+                      A charcoal samovar from the 1890s, jam, buns, and
+                      fireweed.
+                    </p>
+                    <p class="tea-shop__ceremony-duration">2 hours</p>
+                  </div>
+                  <p class="tea-shop__ceremony-price">$100 per company</p>
+                </article>
+                <article class="tea-shop__ceremony">
+                  <div class="tea-shop__ceremony-details">
+                    <h3 class="tea-shop__ceremony-name">Tea brewing school</h3>
+                    <p class="tea-shop__ceremony-description">
+                      We learn to hear the leaf: temperature, water, time,
+                      dishes.
+                    </p>
+                    <p class="tea-shop__ceremony-duration">3 hours</p>
+                  </div>
+                  <p class="tea-shop__ceremony-price">$30 per person</p>
+                </article>
+              </div>
+              <img
+                class="tea-shop__ceremony-line"
+                src="assets/images/line.webp"
+                alt=""
+                width="835"
+                height="818"
+                loading="lazy"
+                decoding="async"
+              />
+              <p class="tea-shop__ceremony-click">Click me</p>
+            </div>
+          </section>
         </main>
-        <footer></footer>
+        <footer id="come-for-tea" class="site-footer">
+          <img
+            class="site-footer__tea-branch--left"
+            src="assets/images/tea-branch.webp"
+            alt=""
+            width="847"
+            height="981"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            class="site-footer__tea-branch--right"
+            src="assets/images/tea-branch.webp"
+            alt=""
+            width="847"
+            height="981"
+            loading="lazy"
+            decoding="async"
+          />
+          <img
+            class="site-footer__background"
+            src="assets/images/footer-transition.webp"
+            alt=""
+            width="1680"
+            height="801"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="site-footer__content">
+            <div class="site-footer__heading">
+              <h2>Come in <b>for</b> a cup of tea</h2>
+            </div>
+            <div class="site-footer__information">
+              <div class="site-footer__contact">
+                <p class="site-footer__contact-label">Address</p>
+                <p class="site-footer__contact-value">London, UK</p>
+              </div>
+              <div class="site-footer__contact">
+                <p class="site-footer__contact-label">Opening hours</p>
+                <p class="site-footer__contact-value">
+                  Daily <time>11:00</time>–<time>23:00</time>
+                </p>
+              </div>
+              <div class="site-footer__contact">
+                <p class="site-footer__contact-label">Phone</p>
+                <a class="site-footer__contact-value" href="tel:+441234567890"
+                  >+44 12 3456 7890</a
+                >
+              </div>
+              <div class="site-footer__contact">
+                <p class="site-footer__contact-label">Email</p>
+                <a
+                  class="site-footer__contact-value"
+                  href="mailto:info@silk-sheet.com"
+                  >info@silk-sheet.com</a
+                >
+              </div>
+            </div>
+            <div class="site-footer__social-links">
+              <a
+                class="site-footer__social-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="site-footer__social-icon"
+                  src="assets/images/facebook-icon.png"
+                  alt="Facebook"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <a
+                class="site-footer__social-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="site-footer__social-icon"
+                  src="assets/images/instagram-icon.png"
+                  alt="Instagram"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <a
+                class="site-footer__social-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="site-footer__social-icon"
+                  src="assets/images/twitter-icon.png"
+                  alt="Twitter"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </div>
+            <button class="site-footer__booking-button" type="button">
+              <span class="site-footer__booking-button-text">Book a table</span>
+            </button>
+          </div>
+        </footer>
       </div>
     </div>
     <script
@@ -351,6 +782,8 @@
     <script src="js/second-chapter.js" defer></script>
     <script src="js/third-chapter.js" defer></script>
     <script src="js/fourth-chapter.js" defer></script>
+    <script src="js/five-chapter.js" defer></script>
+    <script src="js/footer.js" defer></script>
 
     <script type="application/ld+json">
       {
